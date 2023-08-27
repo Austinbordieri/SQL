@@ -1,0 +1,22 @@
+CREATE Table Vinyls(id INTEGER PRIMARY KEY, name TEXT, price INTEGER, inventory INTEGER, artist TEXT);
+
+INSERT into Vinyls VALUES
+
+(1, "House of Balloons", 40, 12, "The Weeknd"),
+(2, "Graduation", 80, 5, "Kanye West"),
+(3, "Blonde", 50, 8, "Frank Ocean"),
+(4, "Astroworld", 30, 20, "Travis Scott"),
+(5, "Goodbye & Good Riddance", 20, 15, "Juice WRLD"),
+(6, "Utopia", 40, 3, "Travis Scott"),
+(7, "Rodeo", 30, 10, "Travis Scott"),
+(8, "Chanel Orange", 50, 12, "Frank Ocean"),
+(9, "Life's a Trip", 25, 30, "Trippie Redd"),
+(10, "Alone at Prom", 90, 1, "Tory Lanez"),
+(11, "KIDS SEE GHOSTS", 30, 13, "Kid Cudi"),
+(12, "Songs About Jane", 40, 18, "Maroon 5"),
+(13, "Riot!", 30, 11, "Paramore"),
+(14, "Gettin Old", 30, 15, "Luke Combs"),
+(15, "Her Loss", 30, 17, "Drake & 21Savage")
+;
+
+SELECT * FROM Vinyls Order By price asc;
