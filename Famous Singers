@@ -1,3 +1,5 @@
+#This project reveals use of the join feature to connect singers and their careers together. 
+
 CREATE TABLE singers 
 (id INTEGER PRIMARY KEY,
 name TEXT,
