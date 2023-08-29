@@ -1,0 +1,47 @@
+CREATE TABLE singers 
+(id INTEGER PRIMARY KEY,
+name TEXT,
+age INTEGER,
+home_town TEXT);
+
+INSERT INTO singers VALUES (1,"Travis Scott",32, "Houston Texas");
+INSERT INTO singers VALUES (2,"Kanye West",46, "Chicago Illinois");
+INSERT INTO singers VALUES (3,"The Weeknd",33, "Toronto Canada");
+INSERT INTO singers VALUES (4,"Drake",36, "Toronto Canada");
+INSERT INTO singers VALUES (5,"Luke Combs",33, "Charlotte North Carolina");
+INSERT INTO singers VALUES (6,"Zach Bryan", 27, "Oologah Oklahoma");
+INSERT INTO singers VALUES (7, "Frank Ocean", 35, "Long Beach California");
+INSERT INTO singers VALUES (8, "Morgan Wallen", 30, "Sneedville Tennessee");
+
+CREATE TABLE career
+(id INTEGER PRIMARY KEY,
+hit_song TEXT,
+net_worth TEXT,
+genre TEXT);
+
+INSERT INTO career VALUES(1,"SICKO MODE", "80 million","Hip-Hop");
+INSERT INTO career VALUES(2,"I Wonder", "400 million","Hip-Hop");
+INSERT INTO career VALUES(3,"Blinding Lights", "300 million","R&B");
+INSERT INTO career VALUES(4,"One Dance", "250 million","Hip-Hop");
+INSERT INTO career VALUES(5,"Fast Car", "20 million","Country");
+INSERT INTO career VALUES(6, "Something in the Orange","1 million", "Country");
+INSERT INTO career VALUES(7, "Pink + White","16 million", "R&B");
+INSERT INTO career VALUES(8, "Last Night", "12 million", "Country");
+/* Joining basic wealth information to the singers name and age*/
+Select name, age, net_worth
+FROM singers as s
+JOIN career as c
+ON s.id = c.id
+ORDER BY age asc;
+
+/* Joining singers to their hit songs and genre played*/
+SELECT name, hit_song, genre
+FROM singers as s
+JOIN career as c
+ON s.id = c.id
+ORDER BY genre;
+
+/* Joining singers to their home towns*/
+SELECT name, home_town 
+FROM singers
+ORDER BY home_town asc;
