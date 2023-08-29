@@ -1,3 +1,5 @@
+# This project reveals a fake vinyl store data base made by me. 
+
 CREATE Table Vinyls(id INTEGER PRIMARY KEY, name TEXT, price INTEGER, inventory INTEGER, artist TEXT);
 
 INSERT into Vinyls VALUES
