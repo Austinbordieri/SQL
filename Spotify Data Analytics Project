@@ -1,5 +1,5 @@
 # The database used in this project was Spotify data downloaded from Kaggle
-# I used this data to creat a table involving the Spotify data and then proceeded to use sequel to perform, analytics on said data
+# I used this data to create a table involving the Spotify data and then proceeded to use sequel to perform, analytics on said data
 
 #Table Creation
 CREATE TABLE BIT_DB0.Spotifydata (
